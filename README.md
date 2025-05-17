@@ -1,14 +1,19 @@
 ```markdown
 # ⏱ FreeRTOS Task Scheduler
 
-This repository contains an embedded systems lab project demonstrating real-time task scheduling using [FreeRTOS](https://www.freertos.org/). It is structured around multiple tasks (vP1Task to vP5Task) that showcase concurrent execution, PWM control, debouncing, and more using the MPLAB X IDE and Microchip toolchain.
+This repository contains an embedded systems lab project
+demonstrating real-time task scheduling using
+[FreeRTOS](https://www.freertos.org/). It is structured
+around multiple tasks (vP1Task to vP5Task) that showcase
+concurrent execution, PWM control, debouncing, and more
+using the MPLAB X IDE and Microchip toolchain.
 
 ---
 
 ##  Project Structure
 
 ```
-
+```markdown
 FreeRTOS-Task-Scheduler/
 
 ├── FreeRTOS\_Lab\_Template.X/
@@ -20,15 +25,16 @@ FreeRTOS-Task-Scheduler/
 ├── dummyTask/
 ├── vP1Task/ to vP5Task/
 └── third\_party/
+```
 
 ````
 # MPLAB X project folder (project configuration, build files)
- # Application source code
- # Entry point and scheduler setup
+# Application source code
+# Entry point and scheduler setup
 # Configuration headers and definitions
 # Button debouncing logic
 # PWM signal generation
- # Idle/test task
+# Idle/test task
 # Custom concurrent tasks
 # (Optional) External or vendor libraries
 ---
