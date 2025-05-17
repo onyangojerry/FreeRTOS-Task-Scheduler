@@ -1,0 +1,17 @@
+# macOS system files
+.DS_Store
+
+# Build artifacts
+*.o
+*.out
+*.elf
+*.hex
+
+# IDE/Editor folders
+*.xcworkspace
+*.idea/
+*.vscode/
+
+# Third-party or generated code (optional)
+src/third_party/
+
