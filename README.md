@@ -1,63 +1,85 @@
-# FreeRTOS-Task-Scheduler
+```markdown
+# ⏱ FreeRTOS Task Scheduler
 
-Here’s a professional `README.md` you can use for the contents of your uploaded **FreeRTOS** project:
+This repository contains an embedded systems lab project demonstrating real-time task scheduling using [FreeRTOS](https://www.freertos.org/). It is structured around multiple tasks (vP1Task to vP5Task) that showcase concurrent execution, PWM control, debouncing, and more using the MPLAB X IDE and Microchip toolchain.
 
 ---
-
-```markdown
-#  FreeRTOS Lab Project
-
-This repository contains a lab-based project using [FreeRTOS](https://www.freertos.org/), developed for learning real-time embedded systems. It includes source code for multiple concurrent tasks, peripherals control (PWM, debouncing), and GPIO management using MPLAB X.
 
 ##  Project Structure
 
 ```
 
-FreeRTOS\_Lab\_Project/
-├── FreeRTOS\_Lab\_Template.X/   # MPLAB X project files
-├── src/                       # Core source code
-│   ├── main.c                 # Entry point with task scheduler setup
-│   ├── debounce/              # Debouncing logic for input buttons
-│   ├── pwm/                   # Pulse-width modulation control
-│   ├── dummyTask/             # Dummy task for testing
-│   ├── vP1Task/ to vP5Task/   # Real-time tasks
-│   ├── config/                # Task configuration
-│   └── third\_party/           # (Optional) External libraries
-└── README.md
+FreeRTOS-Task-Scheduler/
+
+├── FreeRTOS\_Lab\_Template.X/
+└── src/
+├── main.c
+├── config/
+├── debounce/
+├── pwm/
+├── dummyTask/
+├── vP1Task/ to vP5Task/
+└── third\_party/
 
 ````
-
-##  Features
-
-- Multi-tasking using FreeRTOS primitives
-- PWM signal control for peripherals
-- Debounced button input
-- Modular task separation (`vP1Task`, `vP2Task`, etc.)
-- Designed for embedded development using MPLAB X and XC32
+# MPLAB X project folder (project configuration, build files)
+ # Application source code
+ # Entry point and scheduler setup
+# Configuration headers and definitions
+# Button debouncing logic
+# PWM signal generation
+ # Idle/test task
+# Custom concurrent tasks
+# (Optional) External or vendor libraries
+---
 
 ##  Getting Started
 
-1. **Clone or Download**
+### Prerequisites
+- **MPLAB X IDE** (Microchip)
+- **XC32 Compiler**
+- A supported Microchip board (e.g., PIC32 series)
+
+### Setup Instructions
+
+1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/FreeRTOS_Lab_Project.git
+   git clone https://github.com/onyangojerry/FreeRTOS-Task-Scheduler.git
 ````
 
-2. **Open with MPLAB X IDE**
+2. **Open Project**
 
-   * Open `FreeRTOS_Lab_Template.X` as a project.
-   * Ensure the right device and compiler toolchain (e.g., XC32) are selected.
+   * Open `FreeRTOS_Lab_Template.X` in MPLAB X IDE.
 
-3. **Build and Program**
+3. **Build and Flash**
 
-   * Build the project.
-   * Flash to your microcontroller (e.g., PIC32 or supported MCU).
+   * Ensure the correct device and debugger are selected.
+   * Build the project and flash it to your microcontroller.
 
-##  Setup Notes
+---
 
-* This project may rely on FreeRTOS source files or libraries you’ll need to provide in `third_party/`.
-* Use a supported Microchip board (e.g., Curiosity Board or PIC32MX series).
+##  Key Features
+
+*  Preemptive task scheduling with FreeRTOS
+*  Modular task structure (`vP1Task` to `vP5Task`)
+*  PWM control for output peripherals
+*  Debounced input handling
+*  Dummy task for baseline testing
+*  Clean separation of concerns by module
+
+---
 
 ##  License
 
-This lab project is for academic and learning purposes.
+This project is intended for educational purposes and lab-based exploration of real-time embedded systems.
+
+---
+
+##  Author
+
+**Jerry Onyango**
+ Pomona College | Junior CS Student | Embedded Systems & AI Enthusiast
+ [LinkedIn](https://www.linkedin.com/in/onyangojerry) | [GitHub](https://github.com/onyangojerry)
+
+
 
